@@ -19,7 +19,28 @@ class Home extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushNamed('/pdf-view');
                 },
-                name: 'pdf表示')
+                name: 'pdf表示(横スクロール)'),
+            CommonButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/pdf-view-pinch');
+                },
+                name: 'pdf表示2(縦スクロール)'),
+            CommonButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/pdf-view-variable-size');
+                },
+                name: 'pdf表示3(表示枠サイズ制限)'),
+            CommonButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/text-form-test');
+                },
+                name: 'テキストフォームテスト'),
+            CommonButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .pushNamed('/custom-keyboard-text-form-test');
+                },
+                name: 'カスタムキーボードテキストフォームテスト')
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
 
+// 横スライド表示
 class PdfViewPage extends StatefulWidget {
   const PdfViewPage({Key? key}) : super(key: key);
 

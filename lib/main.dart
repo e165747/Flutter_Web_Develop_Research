@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_develop_research/ui/pages/custom_keyboard_text_form_test_page.dart';
 import 'package:flutter_web_develop_research/ui/pages/home.dart';
 import 'package:flutter_web_develop_research/ui/pages/pdf_view_page.dart';
+import 'package:flutter_web_develop_research/ui/pages/pdf_view_page_variable_size.dart';
+import 'package:flutter_web_develop_research/ui/pages/pdf_view_pinch_page.dart';
+import 'package:flutter_web_develop_research/ui/pages/text_form_test_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +32,13 @@ class MyApp extends StatelessWidget {
       ),
       home: const Home(title: 'Flutter Demo Home Page'),
       routes: <String, WidgetBuilder>{
-        '/pdf-view': (BuildContext context) => const PdfViewPage()
+        '/pdf-view': (BuildContext context) => const PdfViewPage(),
+        '/pdf-view-pinch': (BuildContext context) => const PdfViewPinchPage(),
+        '/pdf-view-variable-size': (BuildContext context) =>
+            const PdfViewPageVariableSize(),
+        '/text-form-test': (BuildContext context) => const TextFormTestPage(),
+        '/custom-keyboard-text-form-test': (BuildContext context) =>
+            const CustomKeyboardTextFormTestPage(),
       },
     );
   }
